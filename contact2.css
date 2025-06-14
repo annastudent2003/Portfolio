@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f3ebf9;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 2rem 0 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    color: #6f4b8a;
+  }
+  
+  footer {
+    background-color: #6d4a89;
+    color: #fff;
+    text-align: left;
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    margin-top: auto;
+  }
+  
+  .contact-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-section {
+    flex: 1 1 300px;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .contact-list {
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 2.2;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-list li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-list li a:hover {
+    color: #6f4b8a;
+    text-decoration: underline;
+  }
+  
+  .spline-container {
+    flex: 1 1 400px;
+    max-width: 500px;
+    min-height: 300px;
+  }
+  
+  spline-viewer {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  
+  @media (max-width: 768px) {
+    header {
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .contact-main {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  
+    .spline-container {
+      margin-top: 40px;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
